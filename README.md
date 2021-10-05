@@ -13,7 +13,7 @@ The free energy is calculated by lammps and ssages in CG model with ABF sampling
 
 ## Cite this work
 
-If this repository is helpful for your research please cite the following publication:
+If this repository is helpful for your research please cite this work and github repo.
 
 
 ## Note

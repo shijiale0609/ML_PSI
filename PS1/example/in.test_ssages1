@@ -1,0 +1,66 @@
+##############################################
+# Minimal LAMMPS script for a twistable polymer
+###############################################
+
+#FENE beadspring benchmark
+
+variable        hT   equal   3.0
+variable        T   equal   1.0
+variable	rseed equal 30687325
+
+units          lj
+dimension      3
+atom_style     full
+boundary       p p p
+
+#special_bonds  lj 0.0 1.0 1.0
+#special_bonds fene
+
+read_data	./data.polymer_state1
+
+group groupA id  1:20
+group groupB id  21:420
+#   ----    Force Field     ----
+bond_style    fene
+bond_coeff    1 30.0 1.5 1.0 1.0
+
+special_bonds lj/coul 0 1 1
+
+# pair_tanh_cut_ideal
+# 1) global cutoff
+# 2) input file
+# 3) coarse graining factor
+#
+
+pair_style	lj/cut 2.5
+pair_coeff	* * 1.0 1.0 
+pair_coeff      1 2 0.3 1.0 1.122
+neigh_modify every 1 delay 0 check yes
+
+#group mobile subtract all groupB
+thermo          5000
+#dump  1 all custom 100 traj_equib0_min.lammpstrj id mol type x y z ix iy iz
+#minimize        1.0e-4 1.0e-6 100 1000
+#write_data   system_after_min.data
+
+# ------------------------ MINIMIZATION ------------------------------
+fix                      1 groupB setforce 0 0 0
+#minimize                         1e-4 1e-6 100 1000
+minimize 1e-6 1e-4 10000 10000000
+# # ------------------------ SIMULATION START --------------------------
+unfix                    1
+#velocity                         groupA set ${vx} ${vy} ${vz}
+velocity        groupA create ${T} ${rseed} rot yes mom yes dist gaussian
+fix                      2 groupA nve
+timestep        0.005
+fix                      3 groupA langevin ${T} ${T} 0.5 ${rseed}
+fix ssages all ssages
+
+dump            1 all custom 1000000 traj_nvt1.lammpstrj id mol type x y z ix iy iz
+#dump		2 all dcd 2000 DUMP_FILE_1_2.dcd
+#dump_modify     2 unwrap yes
+
+
+run		20000000
+write_data system_after_nve1.data
+

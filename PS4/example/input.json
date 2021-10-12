@@ -1,0 +1,36 @@
+{
+	"walkers" : 4,
+	"input" : ["in.test_ssages0", "in.test_ssages1", "in.test_ssages2", "in.test_ssages3"],
+	"CVs" :
+	[
+                {       "type" : "ParticleCoordinate",
+                        "atom_ids" : [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                        "dimension" : "z"
+                }
+	],
+ 	"methods" :
+	[
+		{
+			"type" : "ABF",
+			"cvs" : [0],
+			"CV_lower_bounds" : [0.8],
+			"CV_upper_bounds" : [9.8],
+			"CV_bins" : [90],
+			"CV_restraint_minimums" : [0.7],
+			"CV_restraint_maximums" : [9.9],
+			"CV_restraint_spring_constants" : [10],
+			"CV_isperiodic" : [false],
+			"timestep" : 0.005,
+                        "minimum_count" : 200,
+                        "output_file": "F_out",
+                        "output_frequency" : 200000,
+			"restart": false,
+                        "unit_conversion" : 1
+		}
+	],
+	"logger" : {
+	"frequency" : 1000,
+	"output_file" : ["cvs0.dat", "cvs1.dat", "cvs2.dat","cvs3.dat"],
+        "cvs" : [0]
+        }
+}

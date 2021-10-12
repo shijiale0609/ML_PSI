@@ -14,6 +14,14 @@ The free energy is calculated by lammps and ssages in CG model with ABF sampling
 ## Cite this work
 
 If this repository is helpful for your research please cite this work and github repo.
+@misc{shi2021predicting,
+      title={Predicting Adhesive Free Energies of Polymer--Surface Interactions with Machine Learning}, 
+      author={Jiale Shi and Michael J. Quevillon and Pedro H. Amorim Valença and Jonathan K. Whitmer},
+      year={2021},
+      eprint={2110.03041},
+      archivePrefix={arXiv},
+      primaryClass={cond-mat.soft}
+}
 
 
 ## Note

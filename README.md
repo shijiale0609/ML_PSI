@@ -9,7 +9,7 @@ Polymer-surface interactions are crucial to many biological processes and indust
 
 ## Dataset
 
-The free energy is calculated by lammps and ssages in CG model with ABF sampling.
+The free energy is calculated by lammps and [SSAGES](https://ssagesproject.github.io/docs/) in CG model with ABF sampling.
 
 ## Cite this work
 

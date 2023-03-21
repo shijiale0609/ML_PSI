@@ -18,7 +18,7 @@ If this repository is helpful for your research please cite this work and star t
 [Predicting Adhesive Free Energies of Polymer-Surface Interactions with Machine Learning](https://pubs.acs.org/doi/10.1021/acsami.2c08891)
 Jiale Shi and Michael J. Quevillon and Pedro H. Amorim Valença and Jonathan K. Whitmer
 ```
-@article{shi2021predicting,
+@article{shi2022predicting,
 author = {Shi, Jiale and Quevillon, Michael J. and Amorim Valença, Pedro H. and Whitmer, Jonathan K.},
 title = {Predicting Adhesive Free Energies of Polymer–Surface Interactions with Machine Learning},
 journal = {ACS Applied Materials \& Interfaces},

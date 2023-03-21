@@ -11,20 +11,27 @@ Polymer-surface interactions are crucial to many biological processes and indust
 
 The free energy is calculated by lammps and [SSAGES](https://ssagesproject.github.io/docs/) in CG model with ABF sampling.
 
-## Cite this work
+## Cite this work and star this repo
 
-If this repository is helpful for your research please cite this work.
+If this repository is helpful for your research please cite this work and star this repo.
 
-[Predicting Adhesive Free Energies of Polymer-Surface Interactions with Machine Learning](https://arxiv.org/abs/2110.03041)
+[Predicting Adhesive Free Energies of Polymer-Surface Interactions with Machine Learning](https://pubs.acs.org/doi/10.1021/acsami.2c08891)
 Jiale Shi and Michael J. Quevillon and Pedro H. Amorim Valença and Jonathan K. Whitmer
 ```
 @article{shi2021predicting,
-  title={Predicting Adhesive Free Energies of Polymer--Surface Interactions with Machine Learning},
-  author={Shi, Jiale and Quevillon, Michael J and Valen{\c{c}}a, Pedro H Amorim and Whitmer, Jonathan K},
-  journal={arXiv preprint arXiv:2110.03041},
-  year={2021}
+author = {Shi, Jiale and Quevillon, Michael J. and Amorim Valença, Pedro H. and Whitmer, Jonathan K.},
+title = {Predicting Adhesive Free Energies of Polymer–Surface Interactions with Machine Learning},
+journal = {ACS Applied Materials \& Interfaces},
+volume = {14},
+number = {32},
+pages = {37161-37169},
+year = {2022},
+doi = {10.1021/acsami.2c08891},
+URL = {https://doi.org/10.1021/acsami.2c08891},
+eprint = {https://doi.org/10.1021/acsami.2c08891}
 }
 ```
+[Arxiv verion](https://arxiv.org/abs/2110.03041) is also available
 
 ## Note
 code and data for academic purpose only.

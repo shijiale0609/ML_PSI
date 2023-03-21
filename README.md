@@ -31,7 +31,7 @@ URL = {https://doi.org/10.1021/acsami.2c08891},
 eprint = {https://doi.org/10.1021/acsami.2c08891}
 }
 ```
-[Arxiv verion](https://arxiv.org/abs/2110.03041) is also available
+[Arxiv version](https://arxiv.org/abs/2110.03041) is also available
 
 ## Note
 code and data for academic purpose only.

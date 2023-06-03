@@ -1,6 +1,6 @@
 # Predicting Adhesive Free Energies of Polymer-Surface Interactions with Machine Learning
 
-This repository contains an open source implementation of the machine learning model and corresponding dataset described in our paper.
+This repository contains an open source implementation of the machine learning model and corresponding dataset described in our paper [Predicting Adhesive Free Energies of Polymer-Surface Interactions with Machine Learning](https://pubs.acs.org/doi/10.1021/acsami.2c08891).
 
 
 ## Abstract

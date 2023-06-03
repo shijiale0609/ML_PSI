@@ -9,11 +9,11 @@ Polymer-surface interactions are crucial to many biological processes and indust
 
 ## Dataset
 
-The free energy is calculated by lammps and [SSAGES](https://ssagesproject.github.io/docs/) in CG model with ABF sampling.
+The free energy is calculated by lammps and [SSAGES](https://ssagesproject.github.io/docs/) in CG model with ABF sampling. You can check the [simulation example](./PS1/example). 
 
 ## Cite this work and star this repo
 
-If this repository is helpful for your research please cite this work and star this repo.
+If this repository and dataset is helpful for your research please cite this work and star this repo.
 
 [Predicting Adhesive Free Energies of Polymer-Surface Interactions with Machine Learning](https://pubs.acs.org/doi/10.1021/acsami.2c08891)
 Jiale Shi and Michael J. Quevillon and Pedro H. Amorim Valença and Jonathan K. Whitmer

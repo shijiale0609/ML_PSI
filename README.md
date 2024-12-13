@@ -36,3 +36,4 @@ eprint = {https://doi.org/10.1021/acsami.2c08891}
 
 ## Note
 code and data for academic purpose only.
+To promote open-source practices and reproducibility in AI for Polymer research, any published papers using the dataset in this repository are encouraged to disclose their source code detailing how they utilized the dataset.
